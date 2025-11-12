@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000;
+  --color-white: #ffffffd9;
+  --color-primary: #000000;
+  --color-hover: #6542f5;
+  --color-secondary: #ffffff99;
+}
+
+@layer utilities {
+  .nav-btn:hover {
+    box-shadow: rgb(255 255 255 / 0.3) 0px 1px 2px 0px inset;
+    border-radius: 10px;
+    transition: all;
+  }
+}
+@layer utilities {
+  .nav {
+    box-shadow: rgb(0 0 0 / 0.3) 0px 1px 2px 0px inset;
+    border-radius: 10px;
+    transition: all;
+  }
+}
+
+@utility cont {
+  @apply xl:max-w-7xl mx-auto px-5 lg:px-0;
+}
+@utility card {
+  @apply rounded-lg border-white/10 border bg-primary/10 scale-z-110 shadow-xl transition-all duration-300;
+}
+@utility btn-con {
+  @apply bg-white rounded-md text-black font-medium cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
+}
+@utility btn-out {
+  @apply rounded-md text-white cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
+}
+@utility h1 {
+  @apply lg:text-[min(6.5vw,72px)] leading-[1.2] mb-5 font-bold text-white;
+}
+@utility pp {
+  @apply lg:text-[min(1.406vw,18px)] mb-10 text-secondary text-lg;
+}
+@utility btn-div {
+  @apply flex gap-7 justify-center lg:justify-self-start;
+}
+@utility after-line {
+  @apply after:content-[''] after:bg-white/5 after:w-full after:mt-12 after:h-px after:block;
+}
+@utility form-input {
+  @apply placeholder:text-secondary rounded-lg border border-white/5 p-2 w-full bg-gray-600/4 outline-none text-white text-lg mt-1 placeholder:text-sm;
+}
+@utility form-error {
+  @apply text-red-900 text-sm;
+}
+@utility text-h1 {
+  @apply text-[min(8vw,48px)];
+}
+@utility text-pp {
+  @apply text-[min(3.2vw,16px)];
+}
+
+/* @keyframes cardd {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cardd-animation {
+  animation: cardd 0.8s ease-in-out forwards;
+} */
