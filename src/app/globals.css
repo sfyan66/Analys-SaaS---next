@@ -1,11 +1,15 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-black: #000;
   --color-white: #ffffffd9;
-  --color-primary: #000000;
+  --color-primary: #000;
   --color-hover: #6542f5;
   --color-secondary: #ffffff99;
+  --color-borderColor: rgba(214, 235, 253, 0.19);
 }
 
 @layer utilities {
@@ -15,6 +19,16 @@
     transition: all;
   }
 }
+
+/* .card-light {
+  radial-gradient: (
+    70% 80% at center 0%,
+    rgba(255, 255, 255, 0.06) 3%,
+    rgba(98, 255, 179, 0) 70%,
+    rgba(98, 255, 179, 0) 100%
+  );
+} */
+
 @layer utilities {
   .nav {
     box-shadow: rgb(0 0 0 / 0.3) 0px 1px 2px 0px inset;
@@ -27,7 +41,7 @@
   @apply xl:max-w-7xl mx-auto px-5 lg:px-0;
 }
 @utility card {
-  @apply rounded-lg border-white/10 border bg-primary/10 scale-z-110 shadow-xl transition-all duration-300;
+  @apply rounded-2xl border-borderColor border bg-primary/10 scale-z-110 shadow-xl transition-all duration-300;
 }
 @utility btn-con {
   @apply bg-white rounded-md text-black font-medium cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
@@ -42,13 +56,13 @@
   @apply lg:text-[min(1.406vw,18px)] mb-10 text-secondary text-lg;
 }
 @utility btn-div {
-  @apply flex gap-7 justify-center lg:justify-self-start;
+  @apply flex gap-7 justify-center xl:justify-self-start;
 }
 @utility after-line {
   @apply after:content-[''] after:bg-white/5 after:w-full after:mt-12 after:h-px after:block;
 }
 @utility form-input {
-  @apply placeholder:text-secondary rounded-lg border border-white/5 p-2 w-full bg-gray-600/4 outline-none text-white text-lg mt-1 placeholder:text-sm;
+  @apply placeholder:text-secondary rounded-lg border border-borderColor p-2 w-full bg-gray-600/10   outline-none text-white text-lg mt-1 placeholder:text-sm;
 }
 @utility form-error {
   @apply text-red-900 text-sm;
@@ -58,6 +72,21 @@
 }
 @utility text-pp {
   @apply text-[min(3.2vw,16px)];
+}
+@utility ul-li {
+  @apply xl:hidden text-secondary lg:mt-60 lg:ml-50 lg:scale-150 mb-8;
+}
+@utility about-h2 {
+  @apply text-4xl text-white mb-8;
+}
+
+@keyframes move-full {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* @keyframes cardd {

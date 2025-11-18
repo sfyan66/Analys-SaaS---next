@@ -1,92 +1,76 @@
-"use client"
+"use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import IncomeRadial from "@/components/analytics/increase";
+import UsersGrowthBar from "@/components/analytics/baseGrowth";
 
 const Section4 = () => {
   return (
-    <section 
-      className={`lg:h-screen flex items-center lg:flex-row flex-col lg:m-0 my-24`}
+    <section
+      className={`xl:h-screen flex items-center xl:flex-row flex-col my-48`}
     >
-      <div 
-        className={`card py-10 px-8 lg:w-[45%] max-w-[560px]`}
-      >
-        <div 
-          className={`after:content-[' '] after:bg-white/5 after:w-full after:mt-12 after:h-px after:block`}
+      <div className={`py-10 pr-8 -mt-12 xl:w-[45%] w-full`}>
+        <div
+          className={`after:content-[' '] after:bg-white/10 after:w-full after:mt-18 after:mb-6 after:h-px xl:after:block after:hidden`}
         >
-          <h4 
-            className={`text-white lg:text-[min(2.8vw,36px)] text-[min(6vw,36px)] mb-4 font-bold leading-tight`}
-          >Custom-made reports to make great decisions</h4>
-          <p 
-            className={`text-secondary leading-relaxed lg:text-[min(1.328vw,17px)] text-[min(2.5vw,16px)] tracking-wider`}
+          <h4
+            className={`text-white lg:text-[40px] text-[min(6vw,36px)] mb-4 font-bold leading-tight`}
           >
-            Build tailored reports focusing on the metrics crucial for your business goals, enabling smarter, data-driven choices.
+            Custom-made reports to
+            <br />
+            make great decisions
+          </h4>
+          <p
+            className={`text-secondary leading-relaxed lg:text-[16px] text-[min(2.5vw,14px)] tracking-wider`}
+          >
+            Build tailored reports focusing on the metrics crucial for your
+            <br />
+            business goals, enabling smarter, data-driven choices.
           </p>
         </div>
-        <ul 
-          className={`text-secondary flex pt-12 justify-around`}
-        >
-          <li 
-            className="lg:flex-1"
-          >
-            <h5 
-              className={`text-white text-4xl mb-1 font-semibold`}
-            >
-              40%
-            </h5>
-            <p>
-              Increase in retention
-            </p>
+        <ul className={`text-secondary xl:flex pt-12 justify-around hidden`}>
+          <li>
+            <h5 className={`text-white text-4xl mb-1 font-semibold`}>20%</h5>
+            <p>Increase in retention</p>
           </li>
-          <li 
-            className="lg:flex-1"
-          >
-            <h5 
-              className={`text-white text-4xl mb-1 font-semibold`}
-            >
-              2.5X
-            </h5>
-            <p>
-              User base growth
-            </p>
+          <li>
+            <h5 className={`text-white text-4xl mb-1 font-semibold`}>2.5X</h5>
+            <p>User base growth</p>
           </li>
         </ul>
       </div>
       <div
-        className={`pb-12 relative h-fit lg:ml-auto lg:-mt-32 w-[min(95vw,560px)] my-12`}
+        className={`pb-12 relative h-fit xl:ml-auto my-12 xl:block lg:grid-cols-2 md:grid-cols-[30%_70%] md:gap-y-16 lg:gap-y-0 sm:ml-16 sm:grid sm:w-fit w-[95vw]`}
       >
+        <div className="ul-li">
+          <h5 className={`text-white text-4xl mb-1 font-semibold`}>2.5X</h5>
+          <p>User base growth</p>
+        </div>
         <motion.div
-          initial={{opacity:0, y:-40}}
-          whileInView={{opacity:1, y: 0}}
-          transition={{duration: .8, ease: "easeOut"}}
-          viewport={{ once: false }}
+          initial={{ opacity: 0, y: -120 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: true, amount: 1 }}
+          className="xl:mb-[-180px]"
         >
-          <Image
-            src={"/section01.png"}
-            alt={""}
-            width={450}
-            height={250}
-            className={`rounded-lg lg:max-w-[450px] md:w-[560px] w-[80%] ml-auto`}
-          />
+          <UsersGrowthBar />
         </motion.div>
+        <div className="ul-li lg:mt-40 lg:col-start-2 mt-24 md:mt-0">
+          <h5 className={`text-white text-4xl mb-1 font-semibold`}>20%</h5>
+          <p>Increase in retention</p>
+        </div>
         <motion.div
-          initial={{opacity:0, y:50}}
-          whileInView={{opacity:1, y: 0}}
-          transition={{duration: .8, ease: "easeOut"}}
-          viewport={{ once: false }}
-          className={`absolute left-0 md:-left-20 lg:left-0 bottom-[max(-20vw,-130px)] lg:w-[250px] md:w-[280px] w-[45%]`}
+          initial={{ opacity: 0, y: 80, x: 210 }}
+          whileInView={{ opacity: 1, y: 0, x: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+          className={`w-full max-w-[450px] xl:ml-[-210px] lg:col-start-1 lg:row-start-2`}
         >
-          <Image
-            src={"/section52.png"}
-            alt={""}
-            width={250}
-            height={100}
-            className={`rounded-lg`}
-          />
+          <IncomeRadial />
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Section4
+export default Section4;
