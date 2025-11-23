@@ -36,10 +36,12 @@ const Card = ({ features }: Feature) => {
                   height={30}
                   className={`opacity-70`}
                 />
-                <h4 className={`text-white/95 pb-2 pt-8 text-xl font-medium`}>
+                <h4
+                  className={`text-white pb-2 pt-8 text-[24px] font-semibold`}
+                >
                   {feature.title}
                 </h4>
-                <p className="text-secondary leading-relaxed tracking-wider">
+                <p className="text-secondary leading-relaxed tracking-widest md:text-[1rem]">
                   {feature.text}
                 </p>
               </motion.div>

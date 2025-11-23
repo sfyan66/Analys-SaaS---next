@@ -2,25 +2,22 @@
 
 import { addEmail, FormState } from "@/actions/emails";
 import Form from "next/form";
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 
 const Section5 = () => {
   const initialState: FormState = {
     errors: {},
   };
   const [state, formAction] = useActionState(addEmail, initialState);
-  const handleInValid = (e: React.InputEvent<HTMLInputElement>) => {
-    e.preventDefault();
-  };
+  const [email, setEmail] = useState("");
+
   return (
     <section className={`flex items-center`}>
       <div
-        className={`card py-32 px-16 w-full h-[50%] flex flex-col lg:flex-row items-center justify-around lg:justify-between gap-16`}
+        className={`card sm:py-32 py-24 px-8 w-full h-[50%] flex flex-col lg:flex-row items-center justify-around lg:justify-between gap-16`}
       >
         <div className={``}>
-          <h2
-            className={`text-white lg:text-[min(3vw,36px)] text-[min(5vw,36px)] font-bold leading-tight`}
-          >
+          <h2 className={`text-white lg:text-[min(3.75vw,48px)] subhead`}>
             Ready to get started?
             <br />
             Create an account today
@@ -32,18 +29,19 @@ const Section5 = () => {
         >
           <div className="relative">
             <input
-              type="email"
+              type="text"
               name="email"
               placeholder="Enter your email address"
-              onInvalid={handleInValid}
-              className={`placeholder:text-secondary placeholder:text-lg rounded-lg border border-white/5 p-6 w-full bg-gray-600/4 outline-none text-white text-lg`}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={`placeholder:text-secondary placeholder:text-lg placeholder:opacity-70 rounded-lg border border-borderColor p-6 w-full bg-white/3 outline-none text-white text-lg font-bold`}
             />
             <button
               className={`absolute top-[15%] right-2.5 h-[70%] btn-con py-0 sm:block hidden`}
             >
               GET STARTED
             </button>
-            <button className={`btn-con sm:hidden ml-auto py-4 mt-4`}>
+            <button className={`btn-con sm:hidden w-full py-4 mt-4`}>
               GET STARTED
             </button>
           </div>

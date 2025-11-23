@@ -44,7 +44,7 @@ const Features = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ amount: 1, once: true }}
       >
-        <h1 className="text-white text-center lg:text-[min(3.2vw,40px)] mb-4 font-bold text-[min(7vw,40px)]">
+        <h1 className="text-white text-center subhead">
           A Robust Set of Features
         </h1>
       </motion.div>
@@ -54,11 +54,10 @@ const Features = () => {
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         viewport={{ amount: 1, once: true }}
       >
-        <p className="text-secondary text-center leading-relaxed md\:text-[min(1.44vw,18px)] tracking-wider text-[min(2.4vw,14px)]">
+        <p className="text-secondary text-center text-pp max-w-[750px] m-auto">
           Explore our comprehensive toolkit designed to empower you with
-          detailed
-          <br />
-          tracking, reporting, and optimization capabilities for success.
+          detailed tracking, reporting, and optimization capabilities for
+          success.
         </p>
       </motion.div>
       <Card features={features} />

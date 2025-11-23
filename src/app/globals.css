@@ -8,8 +8,9 @@
   --color-white: #ffffffd9;
   --color-primary: #000;
   --color-hover: #6542f5;
-  --color-secondary: #ffffff99;
+  --color-secondary: #ffffffc6;
   --color-borderColor: rgba(214, 235, 253, 0.19);
+  --font-weight-head2: semibold;
 }
 
 @layer utilities {
@@ -38,7 +39,7 @@
 }
 
 @utility cont {
-  @apply xl:max-w-7xl mx-auto px-5 lg:px-0;
+  @apply xl:max-w-7xl mx-auto lg:px-0;
 }
 @utility card {
   @apply rounded-2xl border-borderColor border bg-primary/10 scale-z-110 shadow-xl transition-all duration-300;
@@ -50,7 +51,7 @@
   @apply rounded-md text-white cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
 }
 @utility h1 {
-  @apply lg:text-[min(6.5vw,72px)] leading-[1.2] mb-5 font-bold text-white;
+  @apply lg:text-[min(6.5vw,72px)] mb-4 font-bold text-white;
 }
 @utility pp {
   @apply lg:text-[min(1.406vw,18px)] mb-10 text-secondary text-lg;
@@ -67,11 +68,11 @@
 @utility form-error {
   @apply text-red-900 text-sm;
 }
-@utility text-h1 {
-  @apply text-[min(8vw,48px)];
+@utility head1 {
+  @apply lg:text-[min(5vw,64px)] sm:leading-none mb-4 font-head2 text-4xl leading-[1.2];
 }
 @utility text-pp {
-  @apply text-[min(3.2vw,16px)];
+  @apply text-[min(2.5vw,16px)] tracking-[.1rem];
 }
 @utility ul-li {
   @apply xl:hidden text-secondary lg:mt-60 lg:ml-50 lg:scale-150 mb-8;
@@ -79,7 +80,9 @@
 @utility about-h2 {
   @apply text-4xl text-white mb-8;
 }
-
+@utility subhead {
+  @apply md:text-5xl mb-4 font-head2 text-[min(7vw,36px)] leading-none;
+}
 @keyframes move-full {
   from {
     transform: translateX(100%);

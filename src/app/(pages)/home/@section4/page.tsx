@@ -7,24 +7,19 @@ import UsersGrowthBar from "@/components/analytics/baseGrowth";
 const Section4 = () => {
   return (
     <section
-      className={`xl:h-screen flex items-center xl:flex-row flex-col my-48`}
+      className={`xl:h-screen flex items-center xl:flex-row flex-col my-80`}
     >
-      <div className={`py-10 pr-8 -mt-12 xl:w-[45%] w-full`}>
+      <div className={`py-10 pr-8 -mt-12 xl:w-[48%] w-full`}>
         <div
           className={`after:content-[' '] after:bg-white/10 after:w-full after:mt-18 after:mb-6 after:h-px xl:after:block after:hidden`}
         >
-          <h4
-            className={`text-white lg:text-[40px] text-[min(6vw,36px)] mb-4 font-bold leading-tight`}
-          >
+          <h4 className={`text-white subhead`}>
             Custom-made reports to
             <br />
             make great decisions
           </h4>
-          <p
-            className={`text-secondary leading-relaxed lg:text-[16px] text-[min(2.5vw,14px)] tracking-wider`}
-          >
+          <p className={`text-secondary text-pp max-w-[530px]`}>
             Build tailored reports focusing on the metrics crucial for your
-            <br />
             business goals, enabling smarter, data-driven choices.
           </p>
         </div>

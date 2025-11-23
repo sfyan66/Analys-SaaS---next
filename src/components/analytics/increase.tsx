@@ -79,10 +79,8 @@ export default function MonthlyTarget() {
       <div className="px-5 pt-5 bg- pb-11 sm:px-6 sm:pt-6">
         <div className="flex justify-between">
           <div>
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
-              Monthly Target
-            </h3>
-            <p className="mt-1 font-normal text-gray-500 text-theme-sm dark:text-gray-400">
+            <h3 className="text-lg font-semibold text-white">Monthly Target</h3>
+            <p className="mt-1 font-normal text-secondary text-sm">
               Target you’ve set for each month
             </p>
           </div>
@@ -100,7 +98,7 @@ export default function MonthlyTarget() {
             +20%
           </span>
         </div>
-        <p className="mx-auto mt-10 w-full max-w-[380px] text-center text-sm text-gray-500 sm:text-base">
+        <p className="mx-auto mt-10 w-full max-w-[380px] text-center text-sm text-secondary sm:text-base">
           You earn $6180 today, it&apos;s higher than last month. Keep up your
           good work!
         </p>

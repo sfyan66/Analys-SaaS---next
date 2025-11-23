@@ -58,7 +58,7 @@ export default function Section31() {
             <label className="text-white">
               Email
               <input
-                type="email"
+                type="text"
                 className="form-input"
                 name="email"
                 value={values.email}

@@ -9,7 +9,7 @@ const Section21 = () => {
     >
       <div className={`max-w-[510px]`}>
         <h1
-          className={`h1 leading-none font-normal sm:text-[min(7vw,72px)] text-4xl`}
+          className={`h1 leading-none font-normal sm:text-[min(7vw,72px)] text-4xxl`}
         >
           About our
           <span className="sm:text-[min(6vw,64px)] text-4xl"> Company</span>

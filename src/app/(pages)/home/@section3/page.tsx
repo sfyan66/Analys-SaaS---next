@@ -7,16 +7,12 @@ const Section3 = () => {
   return (
     <section className={`lg:h-screen py-20`}>
       <div className={`mb-12`}>
-        <h4
-          className={`text-white lg:text-[3rem] text-[min(7vw,40px)] mb-4 font-bold leading-tight`}
-        >
-          We make it easy
+        <h4 className={`text-white subhead`}>
+          We make it easy to
           <br />
-          to track all user analytics
+          track all user analytics
         </h4>
-        <p
-          className={`text-secondary leading-relaxed lg:text-[min(2.8vw,16px)] text-[min(2.6vw,16px)] tracking-wider`}
-        >
+        <p className={`text-secondary leading-relaxed text-pp`}>
           Our platform simplifies complex data intoactionable
           <br />
           insights, helping you understand user behavior without the hassle.
@@ -42,10 +38,10 @@ const Section3 = () => {
               height={24}
               className={`opacity-70 mb-4 ml-1`}
             />
-            <h4 className={`text-white pb-4 pt-0 text-xl font-medium`}>
+            <h4 className={`text-white pb-4 pt-0 text-2xl font-head2`}>
               Advanced tracking
             </h4>
-            <p className="text-secondary leading-relaxed tracking-wider text-[min(2.3vw, 16px)]  max-w-[320px]">
+            <p className="text-secondary text-pp max-w-[360px]">
               Go beyond basic metrics with detailed event tracking and custom
               dimension analysis
             </p>
@@ -72,12 +68,12 @@ const Section3 = () => {
               height={24}
               className={`opacity-70 mb-4 ml-1`}
             />
-            <h4 className={`text-white pb-4 pt-0 text-xl font-medium`}>
+            <h4 className={`text-white pb-4 pt-0 text-2xl font-head2`}>
               In-depth monitoring
             </h4>
-            <p className="text-secondary leading-relaxed tracking-wider text-[min(2.3vw, 16px)]  max-w-[360px]">
-              Keep a close eye on key performance indicators and user
-              interactions across all segments of your audience.
+            <p className="text-secondary text-pp max-w-[360px]">
+              Keep a close eye on key performe indicators and user interactions
+              across all of your audience.
             </p>
           </div>
         </div>
