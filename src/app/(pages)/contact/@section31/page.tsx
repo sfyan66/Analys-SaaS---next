@@ -24,15 +24,18 @@ export default function Section31() {
   );
   return (
     <section
-      className={`mt-40 flex flex-col lg:flex-row items-center xl:gap-20 gap-8`}
+      className={`lg:h-screen lg:my-auto mt-40 flex flex-col lg:flex-row items-center xl:gap-20 gap-8`}
     >
       <div className="flex-1">
         <div>
-          <h1 className={`h1 text-[min(7.5vw,72px)] mb-4`}>Contact us!</h1>
-          <p className={`pp mb-4`}>
-            Have questions or need assistance? Fill out the form below,
-            <br />
-            and our dedicated team will get back to you promptly.
+          <h1 className={`text-white head1 text-[3.5rem] md:head1`}>
+            Contact us!
+          </h1>
+          <p
+            className={`text-pp text-[16px] text-secondary mb-8 max-w-[600px]`}
+          >
+            Have questions or need assistance? Fill out the form below, and our
+            dedicated team will get back to you promptly.
           </p>
         </div>
         <Form
@@ -40,7 +43,7 @@ export default function Section31() {
           className="py-4 space-y-4 md:grid grid-cols-2 gap-x-8 gap-y-4 w-full md:max-w-full max-w-[500px]"
         >
           <div>
-            <label className="text-white">
+            <label className="text-white font-light tracking-tight">
               Name
               <input
                 type="text"
@@ -55,7 +58,7 @@ export default function Section31() {
             )}
           </div>
           <div>
-            <label className="text-white">
+            <label className="text-white font-light tracking-tight">
               Email
               <input
                 type="text"
@@ -72,7 +75,7 @@ export default function Section31() {
             )}
           </div>
           <div>
-            <label className="text-white">
+            <label className="text-white font-light tracking-tight">
               Phone
               <input
                 className="form-input"
@@ -88,7 +91,7 @@ export default function Section31() {
             )}
           </div>
           <div>
-            <label className="text-white">
+            <label className="text-white font-light tracking-tight">
               Company
               <input
                 className="form-input"
@@ -126,36 +129,36 @@ export default function Section31() {
         </Form>
       </div>
       <div>
-        <div className="card  w-full h-full text-secondary sm:px-18 px-8 py-12 max-w-[500px] mx-auto">
-          <h1 className="text-white text-3xl">Contact details</h1>
-          <p className="mt-4 mb-12">
+        <div className="card w-full h-full text-secondary sm:px-12 px-8 py-12 max-w-[500px] mx-auto">
+          <h1 className="text-white text-4xl font-semibold">Contact details</h1>
+          <p className="mt-3 mb-12 text-pp text-[16px] ">
             Reach out directly via email or phone using the information provided
             for quick assistance.
           </p>
-          <div className="flex gap-8 mb-8">
+          <div className="flex gap-6 mb-9">
             <Image
               src={"/email.svg"}
               alt=""
               width={22}
               height={22}
-              className="max-w-[22px] max-h-[22px] mt-1"
+              className="max-w-[22px] max-h-[22px] mt-1 opacity-80"
             />
             <div>
-              <h3 className="text-lg text-white">Email</h3>
-              <p>contact@analyzer.com</p>
+              <h3 className="text-xl text-white font-semibold">Email</h3>
+              <p className="font-semibold">contact@analyzer.com</p>
             </div>
           </div>
-          <div className="flex gap-8 mb-8">
+          <div className="flex gap-6 mb-8">
             <Image
               src={"/phone.svg"}
               alt=""
               width={22}
               height={22}
-              className="max-w-[22px] max-h-[22px] mt-1"
+              className="max-w-[22px] max-h-[22px] mt-1 opacity-80"
             />
             <div>
-              <h3 className="text-lg text-white">Phone</h3>
-              <p>(732) 454-6985</p>
+              <h3 className="text-xl text-white font-semibold">Phone</h3>
+              <p className="font-semibold">(732) 454-6985</p>
             </div>
           </div>
           <ul className="text-lg text-white">

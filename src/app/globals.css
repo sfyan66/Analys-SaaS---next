@@ -63,10 +63,10 @@
   @apply after:content-[''] after:bg-white/5 after:w-full after:mt-12 after:h-px after:block;
 }
 @utility form-input {
-  @apply placeholder:text-secondary rounded-lg border border-borderColor p-2 w-full bg-gray-600/10   outline-none text-white text-lg mt-1 placeholder:text-sm;
+  @apply placeholder:text-secondary rounded-lg border border-borderColor py-2 px-4  w-full bg-gray-600/10   outline-none text-white mt-1 placeholder:text-sm;
 }
 @utility form-error {
-  @apply text-red-900 text-sm;
+  @apply text-red-900 text-sm mt-1;
 }
 @utility head1 {
   @apply lg:text-[min(5vw,64px)] sm:leading-none mb-4 font-head2 md:text-[3.5rem] text-4xl leading-[1.2];
