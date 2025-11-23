@@ -28,7 +28,9 @@ export default function Section32() {
     >
       <div className={`w-full text-center mb-4`}>
         <h1 className={`text-white subhead`}>Need more help?</h1>
-        <p className={`text-secondary text-pp text-[16px] mb-8`}>
+        <p
+          className={`text-secondary text-pp text-[16px] mb-8 max-w-[600px] mx-auto`}
+        >
           Explore our various support channels below for specific inquiries,
           whether you need technical assistance, partnership info, or billing
           support
