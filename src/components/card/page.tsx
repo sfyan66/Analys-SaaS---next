@@ -13,7 +13,7 @@ type Feature = {
 
 const Card = ({ features }: Feature) => {
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-16 justify-items-center">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-16 justify-items-center items-stretch">
       {features.map((feature) => (
         <div key={feature.title}>
           <motion.div
@@ -21,8 +21,11 @@ const Card = ({ features }: Feature) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.7 }}
+            className="h-full"
           >
-            <div className={`card pt-8 pb-10 px-4 max-w-[420px] min-h-[250px]`}>
+            <div
+              className={`card pt-8 pb-10 px-4 max-w-[420px] min-h-[250px] h-full`}
+            >
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

@@ -7,7 +7,7 @@ import Card from "@/components/card/page";
 const features = [
   {
     title: "Innovation",
-    text: "We explore new technologies and methods to enhance our platform, ensuring you have cutting-edge tools.",
+    text: "We are exploring new technologies and methods to enhance our platform, ensuring you have cutting-edge tools.",
     svg: "/first2.svg",
   },
   {
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: "Transparency",
-    text: "Open communication and clear processes define our approach, ensuring you understand how our platform works.",
+    text: "Open and clear processes define our approach, ensuring you understand how our platform works.",
     svg: "/fifth2.svg",
   },
   {
@@ -46,7 +46,7 @@ const Section23 = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ amount: 1, once: true }}
       >
-        <h1 className="text-white text-center lg:text-[min(3.2vw,40px)] mb-4 font-bold text-[min(7vw,40px)]">
+        <h1 className="text-white text-center subhead">
           The values that drive
           <br />
           everything we do

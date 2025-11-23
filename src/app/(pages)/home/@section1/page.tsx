@@ -1,6 +1,6 @@
 export default function Section1() {
   return (
-    <section className="text-white cont my-40 sm:my-60 lg:my-0 lg:h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start">
+    <section className="text-white cont lg:my-0 h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start">
       <div className={`text-center lg:text-left lg:ml-16 m-0 p-0`}>
         <h1 className={`head1 p-0 m-0 w-full`}>
           Unlock The Power of

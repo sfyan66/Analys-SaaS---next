@@ -8,22 +8,19 @@ const Section21 = () => {
       className={`xl:h-screen flex flex-col xl:flex-row gap-16 xl:gap-0 mt-40 xl:mt-0 text-center xl:text-start items-center justify-between`}
     >
       <div className={`max-w-[510px]`}>
-        <h1
-          className={`h1 leading-none font-normal sm:text-[min(7vw,72px)] text-4xxl`}
-        >
-          About our
-          <span className="sm:text-[min(6vw,64px)] text-4xl"> Company</span>
+        <h1 className={`text-white sm:head1 head1 text-5xl`}>
+          About our Company
         </h1>
-        <p className={`text-secondary mb-8 sm:text-[min(1.8vw,16px)] text-sm`}>
+        <p className={`text-secondary text-pp mb-8 text-[16px]`}>
           Learn about our journey, dedicated team, and the core mission driving
           us to empower businesses like yours with actionable insights derived
           from clear, concise website analytics.
         </p>
         <div className={`btn-div`}>
-          <button className="btn-con">JOIN OUR TEAM</button>
+          <button className="btn-con ">JOIN OUR TEAM</button>
           <button
             onClick={() => window.scrollBy(0, window.innerHeight)}
-            className={`btn-out`}
+            className={`btn-out xl:block hidden`}
           >
             ABOUT US
           </button>

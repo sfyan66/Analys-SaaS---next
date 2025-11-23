@@ -69,7 +69,7 @@
   @apply text-red-900 text-sm;
 }
 @utility head1 {
-  @apply lg:text-[min(5vw,64px)] sm:leading-none mb-4 font-head2 text-4xl leading-[1.2];
+  @apply lg:text-[min(5vw,64px)] sm:leading-none mb-4 font-head2 md:text-[3.5rem] text-4xl leading-[1.2];
 }
 @utility text-pp {
   @apply text-[min(2.5vw,16px)] tracking-[.1rem];
@@ -81,7 +81,7 @@
   @apply text-4xl text-white mb-8;
 }
 @utility subhead {
-  @apply md:text-5xl mb-4 font-head2 text-[min(7vw,36px)] leading-none;
+  @apply md:text-5xl mb-4 font-head2 text-4xl leading-none;
 }
 @keyframes move-full {
   from {

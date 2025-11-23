@@ -33,12 +33,12 @@ export function PLaces() {
         <AccordionItem
           value={`item-${index + 1}`}
           key={item.title}
-          className="after-line max-w-[600px]"
+          className="after-line after:mt-6 md:after-line max-w-[600px] lg:m-0 mx-8"
         >
-          <AccordionTrigger className="text-white text-2xl hover:ml-8">
+          <AccordionTrigger className="text-black lg:text-white text-2xl hover:ml-8">
             {item.title}
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-8 text-balance text-secondary text-lg">
+          <AccordionContent className="flex flex-col gap-8 text-balance text-black/95 lg:text-secondary tracking-widest text-[16px]">
             <p>
               Our hub of tech innovation, driving product development and
               fostering partnerships on the West Coast.

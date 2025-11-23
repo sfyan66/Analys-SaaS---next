@@ -7,7 +7,7 @@ import UsersGrowthBar from "@/components/analytics/baseGrowth";
 const Section4 = () => {
   return (
     <section
-      className={`xl:h-screen flex items-center xl:flex-row flex-col my-80`}
+      className={`xl:h-screen flex items-center xl:flex-row flex-col sm:my-60 my-40 lg:m-0`}
     >
       <div className={`py-10 pr-8 -mt-12 xl:w-[48%] w-full`}>
         <div

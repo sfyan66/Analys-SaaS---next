@@ -22,10 +22,10 @@ const Section22 = () => {
           />
         </motion.div>
         <div className="lg:my-auto lg:pl-24 my-8">
-          <h2 className="text-5xl text-white mb-8">
+          <h2 className="subhead text-white mb-8">
             A great story always starts with a great team
           </h2>
-          <p className="text-secondary">
+          <p className="text-secondary text-pp text-[16px]">
             Behind every success is a group of passionate individuals. Discover
             the talented people who collaborate daily, bringing expertise and
             dedication to make Pixelcloud a leader in analytics.
@@ -47,10 +47,10 @@ const Section22 = () => {
           />
         </motion.div>
         <div className="lg:my-auto lg:pr-24 lg:col-start-1 lg:row-start-2 my-8">
-          <h2 className="text-5xl text-white mb-8">
+          <h2 className="subhead text-white mb-8">
             Our mission is to help you grow your business
           </h2>
-          <p className="text-secondary">
+          <p className="text-secondary text-pp text-[16px]">
             We strive to simplify complex data, providing clear, actionable
             insights that enable smarter marketing decisions, optimize user
             experience and drive sustainable business growth for you.

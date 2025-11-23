@@ -12,7 +12,7 @@ const Section5 = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <section className={`flex items-center`}>
+    <section className={`flex items-center lg:h-screen lg:m-0`}>
       <div
         className={`card sm:py-32 py-24 px-8 w-full h-[50%] flex flex-col lg:flex-row items-center justify-around lg:justify-between gap-16`}
       >
