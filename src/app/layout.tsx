@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider appearance={{ cssLayerName: 'clerk', theme: dark }}>
+    <ClerkProvider
+      appearance={{ cssLayerName: 'clerk', theme: dark }}
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <html lang="en">
         <body className={`bg-black relative cont px-6 xl:px-0`}>
           <div className="bg-black"></div>
