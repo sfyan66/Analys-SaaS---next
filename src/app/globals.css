@@ -48,7 +48,7 @@
   @apply bg-white rounded-md text-black font-medium cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
 }
 @utility btn-out {
-  @apply rounded-md text-white cursor-pointer px-6 py-3 border border-white hover:scale-97 transition-all duration-300;
+  @apply rounded-md text-white cursor-pointer px-6 py-3 border border-borderColor hover:scale-97 transition-all duration-300;
 }
 @utility h1 {
   @apply lg:text-[min(6.5vw,72px)] mb-4 font-bold text-white;
@@ -83,14 +83,17 @@
 @utility subhead {
   @apply md:text-5xl mb-4 font-head2 text-4xl leading-none;
 }
-@keyframes move-full {
+@utility navbtn {
+  @apply py-3 w-full hover:bg-white/5 text-center rounded-lg;
+}
+/* @keyframes move-full {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
   }
-}
+} */
 
 /* @keyframes cardd {
   0% {

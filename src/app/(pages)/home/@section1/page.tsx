@@ -24,7 +24,10 @@ export default function Section1() {
           >
             GET STARTED
           </Link>
-          <Link href={'/contact'} className="btn-out">
+          <Link
+            href={'/contact'}
+            className="btn-out md:px-6 md:py-3 px-4 py-2 w-fit mx-auto"
+          >
             CONTACT US
           </Link>
         </div>

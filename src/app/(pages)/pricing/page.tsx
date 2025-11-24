@@ -1,40 +1,40 @@
-import PricingCard from "@/components/pricing-card/page";
+import PricingCard from '@/components/pricing-card/page';
 
 const plans = [
   {
-    type: "Startup",
-    price: "199",
+    type: 'Startup',
+    price: '199',
     description:
-      "Ideal for new ventures needing core analytics features to get started quickly.",
+      'Ideal for new ventures needing core analytics features to get started quickly.',
     features: [
-      "All basic features",
-      "Up to $10,000 USD traded",
-      "Normal support",
-      "Mobile App",
+      'All basic features',
+      'Up to $10,000 USD traded',
+      'Normal support',
+      'Mobile App',
     ],
   },
   {
-    type: "Growth",
-    price: "399",
+    type: 'Growth',
+    price: '399',
     description:
-      "Perfect For expanding businesses requiring insights and tools.",
+      'Perfect For expanding businesses requiring insights and tools, start your trail now.',
     features: [
-      "Everything on Startup plan",
-      "Up to 10 team members",
-      "Up to 100MM tracked events",
-      "Premium Support",
+      'Everything on Startup plan',
+      'Up to 10 team members',
+      'Up to 100M tracked events',
+      'Premium Support',
     ],
   },
   {
-    type: "Enterprise",
-    price: "799",
+    type: 'Enterprise',
+    price: '799',
     description:
-      "Comprehensive solution for organizations demanding data capacity.",
+      'Comprehensive solution for organizations demanding data capacity.',
     features: [
-      "Everything on Growth plan",
-      "Up to 1B tracked events",
-      "Up to 50 team members",
-      "Dedicated Suppor",
+      'Everything on Growth plan',
+      'Up to 1B tracked events',
+      'Up to 50 team members',
+      'Dedicated Suppor',
     ],
   },
 ];
@@ -43,7 +43,7 @@ const pricing = () => {
   return (
     <main className={`flex items-center my-20`}>
       <section className={`flex-1`}>
-        <h1 className={`h1 text-[min(8vw,64px)] text-center mt-40 mb-36`}>
+        <h1 className={`h1 head1 text-center mt-24 mb-24`}>
           Pricing plans for
           <br />
           every kind of user
