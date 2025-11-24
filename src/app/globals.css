@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -72,7 +72,7 @@
   @apply lg:text-[min(5vw,64px)] sm:leading-none mb-4 font-head2 md:text-[3.5rem] text-4xl leading-[1.2];
 }
 @utility text-pp {
-  @apply text-[min(2.5vw,16px)] tracking-[.1rem];
+  @apply text-[min(2.5vw,16px)] tracking-[.07rem];
 }
 @utility ul-li {
   @apply xl:hidden text-secondary lg:mt-60 lg:ml-50 lg:scale-150 mb-8;

@@ -4,6 +4,7 @@ import Header from '@/components/header/page';
 import Footer from '@/components/footer/page';
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Analyzer',
@@ -22,6 +23,7 @@ export default function RootLayout({
           <div className="bg-black"></div>
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </body>
       </html>
