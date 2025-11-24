@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import IncomeRadial from "@/components/analytics/increase";
-import UsersGrowthBar from "@/components/analytics/baseGrowth";
+import { motion } from 'framer-motion';
+import IncomeRadial from '@/components/analytics/increase';
+import UsersGrowthBar from '@/components/analytics/baseGrowth';
 
 const Section4 = () => {
   return (
@@ -44,7 +44,7 @@ const Section4 = () => {
         <motion.div
           initial={{ opacity: 0, y: -120 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
           viewport={{ once: true, amount: 1 }}
           className="xl:mb-[-180px]"
         >
@@ -55,9 +55,9 @@ const Section4 = () => {
           <p>Increase in retention</p>
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 80, x: 210 }}
+          initial={{ opacity: 0, y: 80, x: 0 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
           className={`w-full max-w-[450px] xl:ml-[-210px] lg:col-start-1 lg:row-start-2`}
         >

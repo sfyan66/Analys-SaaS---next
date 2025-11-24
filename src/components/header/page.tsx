@@ -84,7 +84,7 @@ const Header = () => {
           <div
             className={`${
               active ? 'flex' : 'hidden'
-            } flex-col backdrop-blur-md card bg-primary w-full mt-2 absolute z-100 right-0 py-8 px-4  shadow-2xl gap-8`}
+            } flex-col card bg-primary w-full mt-2 absolute z-100 right-0 py-8 px-4  shadow-2xl gap-8`}
           >
             <ul className={`flex flex-col gap-4 text-secondary w-full`}>
               <Link href={'/home'}>
