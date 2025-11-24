@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Section1() {
   return (
     <section className="text-white cont lg:my-0 h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start">
@@ -16,10 +18,15 @@ export default function Section1() {
         <div
           className={`flex gap-7 sm:justify-center lg:justify-self-start sm:flex-row flex-col mx-auto sm:mx-0`}
         >
-          <button className="btn-con md:px-6 md:py-3 px-4 py-2 w-fit mx-auto">
+          <Link
+            href={'/sign-up'}
+            className="btn-con md:px-6 md:py-3 px-4 py-2 w-fit mx-auto"
+          >
             GET STARTED
-          </button>
-          <button className="btn-out hidden md:block">VIEW DASHBOARED</button>
+          </Link>
+          <Link href={'/contact'} className="btn-out">
+            CONTACT US
+          </Link>
         </div>
       </div>
     </section>

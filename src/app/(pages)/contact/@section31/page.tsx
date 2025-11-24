@@ -128,7 +128,7 @@ export default function Section31() {
           </button>
         </Form>
       </div>
-      <div>
+      <div className="mt-8 lg:m-0">
         <div className="card w-full h-full text-secondary sm:px-12 px-8 py-12 max-w-[500px] mx-auto">
           <h1 className="text-white text-4xl font-semibold">Contact details</h1>
           <p className="mt-3 mb-12 text-pp text-[16px] ">

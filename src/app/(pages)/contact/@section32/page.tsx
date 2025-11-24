@@ -24,7 +24,7 @@ const helpInfos = [
 export default function Section32() {
   return (
     <section
-      className={`lg:h-screen lg:my-0 my-32 flex items-center flex-col justify-center `}
+      className={`lg:h-screen lg:my-0 md:my-60 my-40 flex items-center flex-col justify-center `}
     >
       <div className={`w-full text-center mb-4`}>
         <h1 className={`text-white subhead`}>Need more help?</h1>

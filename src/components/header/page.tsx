@@ -1,4 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from '@clerk/nextjs';
 
 const Header = () => {
   return (
@@ -15,34 +22,43 @@ const Header = () => {
         </a>
         <ul className={`hidden md:flex gap-3 items-center text-secondary`}>
           <li>
-            <Link href={"/home"} className="nav-btn pt-2 pb-2.5 px-5">
+            <Link href={'/home'} className="nav-btn pt-2 pb-2.5 px-5">
               Home
             </Link>
           </li>
           <li>
-            <Link href={"/about"} className="nav-btn pt-2 pb-2.5 px-5">
+            <Link href={'/about'} className="nav-btn pt-2 pb-2.5 px-5">
               About
             </Link>
           </li>
           <li>
-            <Link href={"/pricing"} className="nav-btn pt-2 pb-2.5 px-5">
+            <Link href={'/pricing'} className="nav-btn pt-2 pb-2.5 px-5">
               Pricing
             </Link>
           </li>
           <li>
-            <Link href={"/contact"} className="nav-btn pt-2 pb-2.5 px-5">
+            <Link href={'/contact'} className="nav-btn pt-2 pb-2.5 px-5">
               Contact
             </Link>
           </li>
         </ul>
-        <ul className={`flex gap-6 items-center`}>
-          <li>
-            <button className={`btn-out py-2`}>LOG IN</button>
-          </li>
-          <li>
-            <button className={`btn-con py-2`}>GET STARTED</button>
-          </li>
-        </ul>
+        <SignedOut>
+          <ul className={`flex gap-6 items-center`}>
+            <li>
+              <SignInButton>
+                <button className={`btn-out py-2`}>LOG IN</button>
+              </SignInButton>
+            </li>
+            <li>
+              <SignUpButton>
+                <button className={`btn-con py-2`}>GET STARTED</button>
+              </SignUpButton>
+            </li>
+          </ul>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </nav>
     </header>
   );
