@@ -1,3 +1,5 @@
+import PageAnimation from '@/components/layout/page';
+
 export default function FeaturesLayout({
   children,
   section21,
@@ -12,12 +14,14 @@ export default function FeaturesLayout({
   section24: React.ReactNode;
 }) {
   return (
-    <main>
-      {children}
-      <section>{ section21 }</section>
-      <section>{ section22 }</section>
-      <section>{ section23 }</section>
-      <section>{ section24 }</section>
-    </main>
-  )
+    <PageAnimation>
+      <main>
+        {children}
+        <section>{section21}</section>
+        <section>{section22}</section>
+        <section>{section23}</section>
+        <section>{section24}</section>
+      </main>
+    </PageAnimation>
+  );
 }

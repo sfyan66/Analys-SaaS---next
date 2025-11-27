@@ -5,6 +5,7 @@ import Footer from '@/components/footer/page';
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
 import { Analytics } from '@vercel/analytics/next';
+import PageAnimation from '@/components/layout/page';
 
 export const metadata: Metadata = {
   title: 'Analyzer',
@@ -22,10 +23,9 @@ export default function RootLayout({
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
       <html lang="en">
-        <body className={`bg-black relative cont px-6 xl:px-0`}>
-          <div className="bg-black"></div>
+        <body className={`bg-black relative md:px-6 px-4 xl:px-0`}>
           <Header />
-          {children}
+          <main className="cont">{children}</main>
           <Analytics />
           <Footer />
         </body>

@@ -1,20 +1,20 @@
-"use client";
+'use client';
 
-import { addEmail, FormState } from "@/actions/emails";
-import Form from "next/form";
-import { useActionState, useState } from "react";
+import { addEmail, FormState } from '@/actions/emails';
+import Form from 'next/form';
+import { useActionState, useState } from 'react';
 
 const Section5 = () => {
   const initialState: FormState = {
     errors: {},
   };
   const [state, formAction] = useActionState(addEmail, initialState);
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
 
   return (
-    <section className={`flex items-center lg:h-screen lg:m-0`}>
+    <section className={`flex items-center my-40`}>
       <div
-        className={`card sm:py-32 py-24 px-8 w-full h-[50%] flex flex-col lg:flex-row items-center justify-around lg:justify-between gap-16`}
+        className={`card sm:py-32 py-24 px-8 w-full flex flex-col lg:flex-row items-center justify-around lg:justify-between gap-16`}
       >
         <div className={``}>
           <h2 className={`text-white lg:text-[min(3.75vw,48px)] subhead`}>

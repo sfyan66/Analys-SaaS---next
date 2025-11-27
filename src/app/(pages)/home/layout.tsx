@@ -1,3 +1,5 @@
+import PageAnimation from '@/components/layout/page';
+
 const HomeLayout = ({
   children,
   section1,
@@ -14,14 +16,16 @@ const HomeLayout = ({
   section5: React.ReactNode;
 }) => {
   return (
-    <main>
-      <div>{children}</div>
-      <section>{section1}</section>
-      <section>{section2}</section>
-      <section>{section3}</section>
-      <section>{section4}</section>
-      <section>{section5}</section>
-    </main>
+    <PageAnimation>
+      <main>
+        <div>{children}</div>
+        <section>{section1}</section>
+        <section>{section2}</section>
+        <section>{section3}</section>
+        <section>{section4}</section>
+        <section>{section5}</section>
+      </main>
+    </PageAnimation>
   );
 };
 

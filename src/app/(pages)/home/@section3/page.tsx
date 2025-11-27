@@ -1,7 +1,7 @@
-import Image from "next/image";
-import UserGrowth from "@/components/analytics/userGrowth";
-import UserSession from "@/components/analytics/userSession";
-import OpacityCom from "@/components/helpers/opacityCom";
+import Image from 'next/image';
+import UserGrowth from '@/components/analytics/userGrowth';
+import UserSession from '@/components/analytics/userSession';
+import OpacityCom from '@/components/helpers/opacityCom';
 
 const Section3 = () => {
   return (
@@ -20,7 +20,7 @@ const Section3 = () => {
       </div>
       <div className={`flex justify-between gap-8 lg:flex-row flex-col`}>
         <div className={`flex-1`}>
-          <div className={`card p-2 rounded-4xl`}>
+          <div className={`relative card p-2 rounded-4xl`}>
             <div className={`bg-white/3 card backdrop-blur-md p-6 m-8 mb-0`}>
               <h3 className={`text-white font-semibold mb-1`}>Users Growth</h3>
               <p className={`text-secondary text-sm mb-4`}>
@@ -32,8 +32,8 @@ const Section3 = () => {
           </div>
           <div className={`ml-12`}>
             <Image
-              src={"/search.svg"}
-              alt={""}
+              src={'/search.svg'}
+              alt={''}
               width={24}
               height={24}
               className={`opacity-70 mb-4 ml-1`}
@@ -62,8 +62,8 @@ const Section3 = () => {
           </div>
           <div className={`flex-1 ml-12`}>
             <Image
-              src={"/eye.svg"}
-              alt={""}
+              src={'/eye.svg'}
+              alt={''}
               width={24}
               height={24}
               className={`opacity-70 mb-4 ml-1`}

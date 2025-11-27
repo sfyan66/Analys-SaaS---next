@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 type FeatureArray = {
   title: string;
@@ -19,8 +19,8 @@ const Card = ({ features }: Feature) => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.5 }}
             className="h-full"
           >
             <div
@@ -29,8 +29,8 @@ const Card = ({ features }: Feature) => {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeIn", delay: 0.5 }}
-                viewport={{ amount: 0.7, once: true }}
+                transition={{ duration: 0.6, ease: 'easeIn', delay: 0.6 }}
+                viewport={{ amount: 0.8, once: true }}
               >
                 <Image
                   src={feature.svg}

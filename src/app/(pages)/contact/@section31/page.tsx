@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import { useActionState, useState } from "react";
-import { FormState, createMessage } from "@/actions/emails";
-import Form from "next/form";
-import Image from "next/image";
+import { useActionState, useState } from 'react';
+import { FormState, createMessage } from '@/actions/emails';
+import Form from 'next/form';
+import Image from 'next/image';
+import AcountsIcons from '@/components/icons/page';
 
 export default function Section31() {
   const initialState: FormState = {
@@ -11,11 +12,11 @@ export default function Section31() {
   };
 
   const [values, setValues] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: '',
   });
 
   const [state, formAction, isPending] = useActionState(
@@ -137,7 +138,7 @@ export default function Section31() {
           </p>
           <div className="flex gap-6 mb-9">
             <Image
-              src={"/email.svg"}
+              src={'/email.svg'}
               alt=""
               width={22}
               height={22}
@@ -150,7 +151,7 @@ export default function Section31() {
           </div>
           <div className="flex gap-6 mb-8">
             <Image
-              src={"/phone.svg"}
+              src={'/phone.svg'}
               alt=""
               width={22}
               height={22}
@@ -161,10 +162,12 @@ export default function Section31() {
               <p className="font-semibold">(732) 454-6985</p>
             </div>
           </div>
-          <ul className="text-lg text-white">
-            Follow us:
-            <li></li>
-          </ul>
+          <div className="text-lg text-white">
+            <h3 className="mb-4">Follow us:</h3>
+            <div className="scale-85 -translate-x-1/12 m-0">
+              <AcountsIcons />
+            </div>
+          </div>
         </div>
       </div>
     </section>

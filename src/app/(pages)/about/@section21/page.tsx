@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Section21 = () => {
   return (
@@ -8,7 +9,7 @@ const Section21 = () => {
       className={`xl:h-screen flex flex-col xl:flex-row gap-16 xl:gap-0 mt-40 xl:mt-0 text-center xl:text-start items-center justify-between`}
     >
       <div className={`max-w-[510px]`}>
-        <h1 className={`text-white sm:head1 head1 text-5xl`}>
+        <h1 className={`text-white sm:text-7xl head1 text-5xl`}>
           About our Company
         </h1>
         <p className={`text-secondary text-pp mb-8 text-[16px]`}>
@@ -17,9 +18,13 @@ const Section21 = () => {
           from clear, concise website analytics.
         </p>
         <div className={`btn-div`}>
-          <button className="btn-con ">JOIN OUR TEAM</button>
+          <Link href={'/contact'} className="btn-con ">
+            JOIN OUR TEAM
+          </Link>
           <button
-            onClick={() => window.scrollBy(0, window.innerHeight)}
+            onClick={() =>
+              window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })
+            }
             className={`btn-out xl:block hidden`}
           >
             ABOUT US
@@ -28,7 +33,7 @@ const Section21 = () => {
       </div>
       <div className="width md:grid md:grid-cols-2 text-secondary text-center">
         <Image
-          src={"/man3.jpg"}
+          src={'/man3.jpg'}
           alt=""
           width={250}
           height={280}
@@ -45,7 +50,7 @@ const Section21 = () => {
           Capital raised
         </div>
         <Image
-          src={"/man5.jpg"}
+          src={'/man5.jpg'}
           alt=""
           width={300}
           height={280}

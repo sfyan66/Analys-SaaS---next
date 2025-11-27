@@ -13,22 +13,20 @@ const Section4 = () => {
         <div
           className={`after:content-[' '] after:bg-white/10 after:w-full after:mt-18 after:mb-6 after:h-px xl:after:block after:hidden`}
         >
-          <h4 className={`text-white subhead`}>
-            Custom-made reports to
-            <br />
-            make great decisions
+          <h4 className={`text-white subhead max-w-[580px]`}>
+            Custom-made reports to make great decisions
           </h4>
           <p className={`text-secondary text-pp max-w-[530px]`}>
             Build tailored reports focusing on the metrics crucial for your
             business goals, enabling smarter, data-driven choices.
           </p>
         </div>
-        <ul className={`text-secondary xl:flex pt-12 justify-around hidden`}>
-          <li>
+        <ul className={`text-secondary xl:flex pt-12 hidden`}>
+          <li className="flex-1">
             <h5 className={`text-white text-4xl mb-1 font-semibold`}>20%</h5>
             <p>Increase in retention</p>
           </li>
-          <li>
+          <li className="flex-1">
             <h5 className={`text-white text-4xl mb-1 font-semibold`}>2.5X</h5>
             <p>User base growth</p>
           </li>
