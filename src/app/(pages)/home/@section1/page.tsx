@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Section1() {
   return (
     <section className="relative text-white py-40 flex flex-col items-center justify-center">
-      <div className={`text-center mb-20`}>
+      <div className={`text-center sm:mb-20 mb-12`}>
         <h1 className={`head1 leading-[1.1] p-0 m-0 w-full`}>
           Unlock The Power of
           <br />
@@ -17,7 +17,7 @@ export default function Section1() {
           analytics. Make decisions with clear data
         </p>
         <div
-          className={`flex gap-10 sm:justify-center sm:flex-row flex-col mx-auto sm:mx-0`}
+          className={`flex sm:gap-10 gap-2 sm:justify-center sm:flex-row flex-col mx-auto sm:mx-0`}
         >
           <Link
             href={'/sign-up'}
