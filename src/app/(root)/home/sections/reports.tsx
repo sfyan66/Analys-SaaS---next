@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import IncomeRadial from '@/components/analytics/increase';
-import UsersGrowthBar from '@/components/analytics/baseGrowth';
+import UsersGrowthBar from '@/components/analytics/base-growth';
 
 const ReportsSection = () => {
   return (

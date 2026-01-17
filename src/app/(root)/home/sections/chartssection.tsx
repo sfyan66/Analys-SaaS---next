@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import UserGrowth from '@/components/analytics/userGrowth';
-import UserSession from '@/components/analytics/userSession';
+import UserGrowth from '@/components/analytics/user-growth';
+import UserSession from '@/components/analytics/user-session';
 import OpacityCom from '@/components/opacityCom';
 
 const ChartsSection = () => {

@@ -3,25 +3,25 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import Image from "next/image";
+} from '@/components/ui/accordion';
+import Image from 'next/image';
 
 const array = [
   {
-    title: "San Francisco",
-    email: "sanfrancisco@analyzer.com",
+    title: 'San Francisco',
+    email: 'sanfrancisco@analyzer.com',
   },
   {
-    title: "London",
-    email: "london@analyzer.com",
+    title: 'London',
+    email: 'london@analyzer.com',
   },
   {
-    title: "New York",
-    email: "newyork@analyzer.com",
+    title: 'New York',
+    email: 'newyork@analyzer.com',
   },
 ];
 
-export function PLaces() {
+export function OfficeLocations() {
   return (
     <Accordion
       type="single"
@@ -45,7 +45,7 @@ export function PLaces() {
             </p>
             <div className=" hover:ml-2 hover:text-white text-lg">
               <Image
-                src={"/email.svg"}
+                src={'/email.svg'}
                 alt=""
                 className="size-6 mr-4 inline"
                 width={26}

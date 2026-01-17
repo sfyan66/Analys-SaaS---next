@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { PLaces } from '@/components/office-acordion';
+import { OfficeLocations } from '@/components/office-acordion';
 
 const Office = () => {
   return (
@@ -15,7 +15,7 @@ const Office = () => {
       </p>
       <div className="relative flex lg:flex-row-reverse flex-col lg:gap-16 xl:gap-32 sm:my-24 items-center lg:w-full lg:max-w-7xl max-w-[600px] mx-auto min-h-[570px]">
         <div className="flex items-center flex-1 w-full">
-          <PLaces />
+          <OfficeLocations />
         </div>
         <Image
           src={'/office.jpg'}
