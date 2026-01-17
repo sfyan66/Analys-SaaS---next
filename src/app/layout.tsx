@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/header/page';
-import Footer from '@/components/footer/page';
+import Footer from '@/components/footer';
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
 import { Analytics } from '@vercel/analytics/next';
-import PageAnimation from '@/components/layout/page';
 
 export const metadata: Metadata = {
   title: 'Analyzer',
