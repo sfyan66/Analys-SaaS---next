@@ -67,6 +67,16 @@ const Header = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link
+              href={'/not-found'}
+              className={`nav-btn headernav ${
+                pathname === '/not-found' ? 'nav-btn-active' : ''
+              }`}
+            >
+              404 page
+            </Link>
+          </li>
         </ul>
         <div className="ml-auto mr-6 lg:m-0">
           <SignedOut>
@@ -132,6 +142,9 @@ const Header = () => {
               </Link>
               <Link href={'/contact'}>
                 <li className="navbtn">Contact</li>
+              </Link>
+              <Link href={'/not-found'}>
+                <li className="navbtn">404 page</li>
               </Link>
             </ul>
             <SignedOut>

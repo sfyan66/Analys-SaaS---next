@@ -15,7 +15,8 @@
 
 @layer utilities {
   .nav-btn:hover {
-    box-shadow: rgb(255 255 255/ 0.3) 0px 1px 2px inset,
+    box-shadow:
+      rgb(255 255 255/ 0.3) 0px 1px 2px inset,
       rgb(255 255 255 / 0.3) 0px -1px 2px inset;
     border-radius: 10px;
     transition: all;
@@ -23,7 +24,8 @@
 }
 @layer utilities {
   .nav-btn-active {
-    box-shadow: rgb(255 255 255/ 0.3) 0px 1px 2px inset,
+    box-shadow:
+      rgb(255 255 255/ 0.3) 0px 1px 2px inset,
       rgb(255 255 255 / 0.3) 0px -1px 2px inset;
     border-radius: 10px;
     transition: all;
@@ -47,7 +49,8 @@
   }
   @layer utilities {
     .shade {
-      box-shadow: rgb(255 255 255) 0px 2px 6px -2px,
+      box-shadow:
+        rgb(255 255 255) 0px 2px 6px -2px,
         rgb(255 255 255) 0px -2px 6px -1px;
     }
   }
@@ -115,23 +118,3 @@
 @utility footernav {
   @apply py-3 w-full hover:bg-white hover:shadow-2xl bg-white/7 text-center rounded-lg hover:text-black;
 }
-/* @keyframes move-full {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-} */
-
-/* @keyframes cardd {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.cardd-animation {
-  animation: cardd 0.8s ease-in-out forwards;
-} */
